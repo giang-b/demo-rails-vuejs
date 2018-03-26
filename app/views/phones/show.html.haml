@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @phone.name
+%p
+  %b Price:
+  = @phone.price
+%p
+  %b Description:
+  = @phone.description
+%p
+  %b Image:
+  = @phone.image
+
+= link_to 'Edit', edit_phone_path(@phone)
+\|
+= link_to 'Back', phones_path
